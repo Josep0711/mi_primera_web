@@ -1,0 +1,334 @@
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        font-family: "Roboto Condensed", sans-serif;
+        background-color: #f0f0f0;
+    }
+    /* CABECERA */
+    header {
+        background-color: #333;
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 80px;
+        width: 100%;
+    }
+    nav ul.menu {
+    float: right;
+    }
+
+    nav ul.menu li {
+    display: inline-block;
+    line-height: 130px;
+    margin: 0 5px;
+    }
+
+    nav ul.menu li a {
+    color: #eee;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 7px 7px;
+    text-decoration: none;
+    }
+
+    .logo {
+        width: 50px;
+        margin: 34px;
+    }
+
+
+    .checkbtn{
+        font-size: 25px;
+        color: white;
+        float: right;
+        line-height: 80px;
+        margin-right: 40px;
+        cursor: pointer;
+        display: none;
+    }
+    /* FIN DE LA CABECERA */
+
+    /* CUERPO */
+    main {
+        padding: 20px;
+    }
+
+    .seccion-1 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 22px 103px 55px 96px;
+        font-weight: 900;
+        font-size: 30px;
+    }
+    .seccion-2 .carucel{
+        display: flex;
+        width: 100%;
+        height: 325px;
+        align-items: center;
+    }
+
+    .acerca-de {
+        max-width: 50%;
+    }
+
+    .acerca-imagen img {
+        max-width: 100%;
+        height: auto;
+    }
+    .tarjeta-block {
+        padding: 19px 8px 30px 64px;
+    }
+    .seccion-3 h3{
+        padding: 15px 0 10px 15px;
+        font-size: 20px;
+        color: rgb(206, 54, 54);
+    }
+    .tarjeta {
+        width: calc(34% - 50px); 
+        max-width: 438px; 
+        height: auto; 
+        background-color: #f0f0f0;
+        border-radius: 10px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        margin: 10px;
+        display: inline-block;
+        vertical-align: top;
+        overflow: hidden;
+        box-sizing: border-box; 
+    }
+    .contenido-tarjeta {
+        padding: 20px;
+    }
+
+    .imagen-tarjeta {
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    .leer-mas {
+        color: rgb(255, 0, 85);
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
+    .leer-mas:hover {
+        color: darkblue;
+    }
+    /* ------------- Formulario ------------- */
+   
+    .formulario {
+        background-color: #f6f7f8;
+        border: 1px solid #d6d9dc;
+        border-radius: 20px;
+        text-align: center;
+        width: 30%;
+        margin: 10px auto;
+        padding: 50px;
+    }
+    /* ------------- Campos del Formulario ------------- */
+
+    .form-row {
+        margin-bottom: 40px;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .form-title {
+        margin-bottom: 40px;
+        justify-content: flex-start;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    
+    .form-row input[type="text"] {
+        background-color: #bdbdbd;
+        border: 0;
+        border-radius: 6px;
+        width: 100%;
+        padding: 7px;
+        font-size: 14px;
+    }
+    
+    .form-row label {
+        margin-bottom: 3px;
+        text-align: initial;
+    }
+    .form-row input[type="email"]{
+        background-color: #bdbdbd;
+        border: 0;
+        border-radius: 6px;
+        width: 100%;
+        padding: 7px;
+        font-size: 14px;
+    }
+    .form-row textarea {
+        font-family: "Helvetica", "Arial", sans-serif;
+        font-size: 14px;
+        background-color: #bdbdbd;
+        border: 0;
+        border-radius: 6px;
+        min-height: 200px;
+        margin-bottom: 10px;
+        padding: 7px;
+        resize: none;
+        width: 100%;
+    }
+    .form-row button {
+        font-size: 16px;
+        font-weight: bold;
+        color: #ffffff;
+        background-color: #5995da;
+        border: none;
+        border-radius: 3px;
+        padding: 10px 40px;
+        cursor: pointer;
+        margin: auto;
+      }
+    .form-row button:hover {
+        background-color: #76aeed;
+    }
+    .form-row button:active {
+        background-color: #407fc7;
+    }
+    .alertas{
+        color: red;
+        font-weight: bold;
+    }
+    
+
+  /* FIN DEL CUERPO */
+@media screen and (max-width: 768px) {
+    /* CABECERA */
+    header {
+        background-color: #333;
+        color: #fff;
+        height: 80px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .checkbtn{
+        display: block;
+    }
+    .navbar {
+        height: 0vh;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background: #2c3e50;
+        text-align: center;
+        transition: all 0.5s;
+        overflow: hidden;
+    }
+    .navbar ul.menu {
+        float: none;
+        display: block;
+        width: 174px;
+        margin: 0 auto;
+        opacity: 0;
+    }
+    .navbar ul.menu li a {
+        font-size: 25px;
+    }
+    .navbar ul.menu li a:hover {
+    color: #b59a61;
+    }
+    /* FIN DE LA CABECERA*/ 
+
+    /* ACTIVE */
+    .navbar.active {
+    height: 100vh;
+    }
+
+    .navbar.active ul.menu {
+    opacity: 1;
+    } 
+    /*FIN DEL ACTIVE*/
+
+    /*MAIN*/
+    .seccion-1 {
+        display: block;
+        justify-content: space-between;
+        align-items: center;
+        padding: 25px 6px 65px 12px;
+        font-weight: 900;
+        font-size: 30px;
+    }
+    .acerca-de {
+        max-width: 100%;
+        padding: 0 0 40px 0;
+    }
+    .tarjeta {
+        width: calc(100% - 25px); 
+    }
+    .tarjeta-block {
+        padding: 26px 3px 22px 6px;
+    }
+
+    .formulario {
+        padding: 20px;
+        width: 80%;
+    }
+
+    .form-row {
+        flex-direction: row;
+        align-items: flex-start;
+        margin-bottom: 20px;
+    }
+    .form-row input[type="text"] {
+        width: 100%;
+        height: initial;
+    }
+    .form-row input[type="email"] {
+        width: 100%;
+        height: initial;
+    }
+    .form-row label {
+        width: 120px;
+        margin-top: 11px;
+        padding-right: 20px;
+    }
+    .form-row textarea {
+        width: 100%;
+    }
+    .form-row button {
+        width: 100%;
+    }
+    /*FIN DE MAIN*/
+    
+}
+  
+    /*FOOTER*/
+    footer {
+        background-color: #333;
+        color: #fff;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 80px;
+        text-align: center;
+        
+    }
+    footer h3 {
+        padding: 15px 0 10px 15px;
+    }
+
+    footer ul li {
+        display: inline-block;
+        margin-right: 15px;
+    }
+
+    footer ul li a {
+        color: #fff;
+        text-decoration: none;
+    }
+    /*FIN DEL FOOTER*/
